@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I"/home/mattia-arch/Documents/archGL_engine/include/*.hpp" -I/home/mattia-arch/Documents/archGL_engine/, -I"/home/mattia-arch/Documents/archGL_engine/include/*.h"
+C_INCLUDES = -I"/home/mattia-arch/Documents/archGL_engine/include/*.h"
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/mattia-arch/Documents/archGL_engine/include/*.hpp" -I/home/mattia-arch/Documents/archGL_engine/, -I"/home/mattia-arch/Documents/archGL_engine/include/*.h"
+CXX_INCLUDES = -I"/home/mattia-arch/Documents/archGL_engine/include/*.h"
 
 CXX_FLAGS = -std=gnu++17
 

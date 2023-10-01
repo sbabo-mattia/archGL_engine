@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mattia-arch/Documents/archGL_engine/src/glad.c" "CMakeFiles/main.dir/src/glad.c.o" "gcc" "CMakeFiles/main.dir/src/glad.c.o.d"
   "/home/mattia-arch/Documents/archGL_engine/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "/home/mattia-arch/Documents/archGL_engine/src/windowing/window.cpp" "CMakeFiles/main.dir/src/windowing/window.cpp.o" "gcc" "CMakeFiles/main.dir/src/windowing/window.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

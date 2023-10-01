@@ -4,11 +4,10 @@ project(OpenGLProj)
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB SOURCES "src/*.cpp", "src/*.c")
+file(GLOB SOURCES "src/*.cpp", "src/windowing/*.cpp" "src/*.c")
 add_executable(main ${SOURCES})
 
-include_directories("include/*.hpp",
-                    "include/*.h")
+include_directories("include/*.h")
 
 find_package(OpenGL REQUIRED)
 target_link_libraries(main OpenGL::OpenGL)

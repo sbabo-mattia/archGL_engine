@@ -3,6 +3,8 @@ The purpose of this repository is for running OpenGL with Wayland display server
 # Requirements
 You should have GLFW and its dependencies installed.
 
+## Arch
+
     sudo yay -S cmake libglu1-mesa-dev glfw-wayland
 
 Or install glfw from the official repository

@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
  /home/mattia-arch/Documents/archGL_engine/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/mattia-arch/Documents/archGL_engine/src/../include/main.hpp \
+ /home/mattia-arch/Documents/archGL_engine/src/../include/main.h \
  /usr/include/c++/13.2.1/iostream \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -142,4 +142,5 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/GLFW/glfw3.h \
+ /home/mattia-arch/Documents/archGL_engine/src/../include/../include/window.h

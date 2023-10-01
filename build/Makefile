@@ -177,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/windowing/window.o: src/windowing/window.cpp.o
+.PHONY : src/windowing/window.o
+
+# target to build an object file
+src/windowing/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/windowing/window.cpp.o
+.PHONY : src/windowing/window.cpp.o
+
+src/windowing/window.i: src/windowing/window.cpp.i
+.PHONY : src/windowing/window.i
+
+# target to preprocess a source file
+src/windowing/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/windowing/window.cpp.i
+.PHONY : src/windowing/window.cpp.i
+
+src/windowing/window.s: src/windowing/window.cpp.s
+.PHONY : src/windowing/window.s
+
+# target to generate assembly for a file
+src/windowing/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/windowing/window.cpp.s
+.PHONY : src/windowing/window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/windowing/window.o"
+	@echo "... src/windowing/window.i"
+	@echo "... src/windowing/window.s"
 .PHONY : help
 
 
