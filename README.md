@@ -12,3 +12,17 @@ Or install glfw from the official repository
     cmake -G "Unix Makefiles"  
     make  
     sudo make install
+
+OpenGL API version 4.6 and greater. Check by running mesa-utils verification tool.
+
+    yay -S mesa-utils // if not already installed
+    eglinfo -B
+
+# Build
+
+In the build folder run:
+
+    cmake ..
+    make
+    ./main
+
