@@ -42,6 +42,16 @@ namespace mShader
 
     namespace mLinkShader
     {
-        unsigned int linkShader();
+
+        class linkingShaderClass
+        {
+        private:
+            unsigned int shader_program;
+
+        public:
+            linkingShaderClass();
+            unsigned int returnShaderProgram();
+            void deleteShaderProgram();
+        };
     }
 }

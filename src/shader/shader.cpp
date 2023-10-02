@@ -46,7 +46,7 @@ namespace mShader
 
     namespace mLinkShader
     {
-        unsigned int linkShader()
+        linkingShaderClass::linkingShaderClass()
         {
 
             unsigned int vertex_shader = 0;
@@ -58,7 +58,7 @@ namespace mShader
             int success;
             char infoLog[512];
 
-            unsigned int shader_program = glCreateProgram();
+            shader_program = glCreateProgram();
             glAttachShader(shader_program, vertex_shader);
             glAttachShader(shader_program, fragment_shader);
             glLinkProgram(shader_program);
@@ -72,8 +72,16 @@ namespace mShader
             }
             glDeleteShader(vertex_shader);
             glDeleteShader(fragment_shader);
+        }
 
+        unsigned int linkingShaderClass::returnShaderProgram()
+        {
             return shader_program;
+        }
+
+        void linkingShaderClass::deleteShaderProgram()
+        {
+            glDeleteProgram(shader_program);
         }
     }
 }

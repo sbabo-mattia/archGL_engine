@@ -17,17 +17,25 @@ int main()
     printf("OpenGL renderer: %s\n", glGetString(GL_RENDERER));
     printf("OpenGL shader: %s\n", glGetString(GL_SHADER_COMPILER));
 
-    unsigned int shader_program = mShader::mLinkShader::linkShader();
+
+    mShader::mLinkShader::linkingShaderClass link_shader = mShader::mLinkShader::linkingShaderClass();
+    unsigned int shader_program = link_shader.returnShaderProgram();
 
     std::vector<float> vertices = {
-    -0.5f, -0.5f, 0.0f,
-     0.5f, -0.5f, 0.0f,
-     0.0f,  0.5f, 0.0f
+         0.5f,  0.5f, 0.0f,  // top right
+         0.5f, -0.5f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f,  // bottom left
+        -0.5f,  0.5f, 0.0f   // top left 
     };
 
-    mGeometryObject::geometryObjectClass triangleObj = mGeometryObject::geometryObjectClass(vertices);
+    std::vector<unsigned int> indices = {
+        0, 1, 3, // first Triangle
+        1, 2, 3  // second Triangle
+    };
 
-    unsigned int VAO = triangleObj.VAO;
+    mGeometryObject::geometryObjectClass triangleObj = mGeometryObject::geometryObjectClass(vertices, indices);
+
+    unsigned int VAO = triangleObj.returnVao();
 
     while (!glfwWindowShouldClose(win))
     {
@@ -39,13 +47,19 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(shader_program);
+
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
         glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-        glDrawArrays(GL_TRIANGLES, 0, 6);
-        //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        // glDrawArrays(GL_TRIANGLES, 0, 6);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glfwSwapBuffers(win);
         glfwPollEvents();
     }
+
+    triangleObj.deleteBuffer();
+    link_shader.deleteShaderProgram();
 
     glfwTerminate();
     return 0;
