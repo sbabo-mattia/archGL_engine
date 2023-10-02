@@ -4,7 +4,11 @@ project(OpenGLProj)
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB SOURCES "src/*.cpp", "src/windowing/*.cpp" "src/*.c")
+file(GLOB SOURCES "src/*.cpp",
+                  "src/windowing/*.cpp",
+                  "src/geometry/*.cpp",
+                  "src/shader/*.cpp"
+                  "src/*.c")
 add_executable(main ${SOURCES})
 
 include_directories("include/*.h")

@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/geometry/geometry_obj.o: src/geometry/geometry_obj.cpp.o
+.PHONY : src/geometry/geometry_obj.o
+
+# target to build an object file
+src/geometry/geometry_obj.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o
+.PHONY : src/geometry/geometry_obj.cpp.o
+
+src/geometry/geometry_obj.i: src/geometry/geometry_obj.cpp.i
+.PHONY : src/geometry/geometry_obj.i
+
+# target to preprocess a source file
+src/geometry/geometry_obj.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.i
+.PHONY : src/geometry/geometry_obj.cpp.i
+
+src/geometry/geometry_obj.s: src/geometry/geometry_obj.cpp.s
+.PHONY : src/geometry/geometry_obj.s
+
+# target to generate assembly for a file
+src/geometry/geometry_obj.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.s
+.PHONY : src/geometry/geometry_obj.cpp.s
+
 src/glad.o: src/glad.c.o
 .PHONY : src/glad.o
 
@@ -177,6 +201,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shader/shader.o: src/shader/shader.cpp.o
+.PHONY : src/shader/shader.o
+
+# target to build an object file
+src/shader/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shader/shader.cpp.o
+.PHONY : src/shader/shader.cpp.o
+
+src/shader/shader.i: src/shader/shader.cpp.i
+.PHONY : src/shader/shader.i
+
+# target to preprocess a source file
+src/shader/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shader/shader.cpp.i
+.PHONY : src/shader/shader.cpp.i
+
+src/shader/shader.s: src/shader/shader.cpp.s
+.PHONY : src/shader/shader.s
+
+# target to generate assembly for a file
+src/shader/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shader/shader.cpp.s
+.PHONY : src/shader/shader.cpp.s
+
 src/windowing/window.o: src/windowing/window.cpp.o
 .PHONY : src/windowing/window.o
 
@@ -210,12 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/geometry/geometry_obj.o"
+	@echo "... src/geometry/geometry_obj.i"
+	@echo "... src/geometry/geometry_obj.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/shader/shader.o"
+	@echo "... src/shader/shader.i"
+	@echo "... src/shader/shader.s"
 	@echo "... src/windowing/window.o"
 	@echo "... src/windowing/window.i"
 	@echo "... src/windowing/window.s"

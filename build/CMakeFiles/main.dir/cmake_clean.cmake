@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o"
+  "CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o.d"
   "CMakeFiles/main.dir/src/glad.c.o"
   "CMakeFiles/main.dir/src/glad.c.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "CMakeFiles/main.dir/src/shader/shader.cpp.o"
+  "CMakeFiles/main.dir/src/shader/shader.cpp.o.d"
   "CMakeFiles/main.dir/src/windowing/window.cpp.o"
   "CMakeFiles/main.dir/src/windowing/window.cpp.o.d"
   "main"
