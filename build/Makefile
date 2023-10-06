@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/engine/engine.o: src/engine/engine.cpp.o
+.PHONY : src/engine/engine.o
+
+# target to build an object file
+src/engine/engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/engine.cpp.o
+.PHONY : src/engine/engine.cpp.o
+
+src/engine/engine.i: src/engine/engine.cpp.i
+.PHONY : src/engine/engine.i
+
+# target to preprocess a source file
+src/engine/engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/engine.cpp.i
+.PHONY : src/engine/engine.cpp.i
+
+src/engine/engine.s: src/engine/engine.cpp.s
+.PHONY : src/engine/engine.s
+
+# target to generate assembly for a file
+src/engine/engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/engine.cpp.s
+.PHONY : src/engine/engine.cpp.s
+
 src/geometry/geometry_obj.o: src/geometry/geometry_obj.cpp.o
 .PHONY : src/geometry/geometry_obj.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/engine/engine.o"
+	@echo "... src/engine/engine.i"
+	@echo "... src/engine/engine.s"
 	@echo "... src/geometry/geometry_obj.o"
 	@echo "... src/geometry/geometry_obj.i"
 	@echo "... src/geometry/geometry_obj.s"

@@ -3,12 +3,8 @@
 #include "main.h"
 #include <vector>
 
-
-
 namespace mGeometryObject
 {
-
-
     class geometryObjectClass{
 
         private:

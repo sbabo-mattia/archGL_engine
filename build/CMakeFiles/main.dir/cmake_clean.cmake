@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/engine/engine.cpp.o"
+  "CMakeFiles/main.dir/src/engine/engine.cpp.o.d"
   "CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o"
   "CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o.d"
   "CMakeFiles/main.dir/src/glad.c.o"

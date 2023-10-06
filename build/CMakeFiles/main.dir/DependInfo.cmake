@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mattia-arch/Documents/archGL_engine/src/glad.c" "CMakeFiles/main.dir/src/glad.c.o" "gcc" "CMakeFiles/main.dir/src/glad.c.o.d"
+  "/home/mattia-arch/Documents/archGL_engine/src/engine/engine.cpp" "CMakeFiles/main.dir/src/engine/engine.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/engine.cpp.o.d"
   "/home/mattia-arch/Documents/archGL_engine/src/geometry/geometry_obj.cpp" "CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o" "gcc" "CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o.d"
   "/home/mattia-arch/Documents/archGL_engine/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   "/home/mattia-arch/Documents/archGL_engine/src/shader/shader.cpp" "CMakeFiles/main.dir/src/shader/shader.cpp.o" "gcc" "CMakeFiles/main.dir/src/shader/shader.cpp.o.d"

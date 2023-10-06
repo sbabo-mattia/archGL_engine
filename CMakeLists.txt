@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD 17)
 file(GLOB SOURCES "src/*.cpp",
                   "src/windowing/*.cpp",
                   "src/geometry/*.cpp",
-                  "src/shader/*.cpp"
+                  "src/shader/*.cpp",
+                  "src/engine/*.cpp",
                   "src/*.c")
 add_executable(main ${SOURCES})
 
