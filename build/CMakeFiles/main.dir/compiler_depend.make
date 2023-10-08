@@ -3,9 +3,7 @@
 
 CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_engine/src/engine/engine.cpp \
   /home/mattia-arch/Documents/archGL_engine/include/engine.h \
-  /home/mattia-arch/Documents/archGL_engine/include/geometry.h \
   /home/mattia-arch/Documents/archGL_engine/include/glad/glad.h \
-  /home/mattia-arch/Documents/archGL_engine/include/main.h \
   /home/mattia-arch/Documents/archGL_engine/include/shader.h \
   /home/mattia-arch/Documents/archGL_engine/include/types.h \
   /home/mattia-arch/Documents/archGL_engine/include/window.h \
@@ -206,13 +204,9 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/local/include/GLFW/glfw3.h
 
 CMakeFiles/main.dir/src/geometry/geometry_obj.cpp.o: /home/mattia-arch/Documents/archGL_engine/src/geometry/geometry_obj.cpp \
-  /home/mattia-arch/Documents/archGL_engine/include/engine.h \
   /home/mattia-arch/Documents/archGL_engine/include/geometry.h \
   /home/mattia-arch/Documents/archGL_engine/include/glad/glad.h \
-  /home/mattia-arch/Documents/archGL_engine/include/main.h \
-  /home/mattia-arch/Documents/archGL_engine/include/shader.h \
   /home/mattia-arch/Documents/archGL_engine/include/types.h \
-  /home/mattia-arch/Documents/archGL_engine/include/window.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -682,13 +676,9 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/local/include/GLFW/glfw3.h
 
 CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_engine/src/shader/shader.cpp \
-  /home/mattia-arch/Documents/archGL_engine/include/engine.h \
-  /home/mattia-arch/Documents/archGL_engine/include/geometry.h \
   /home/mattia-arch/Documents/archGL_engine/include/glad/glad.h \
-  /home/mattia-arch/Documents/archGL_engine/include/main.h \
   /home/mattia-arch/Documents/archGL_engine/include/shader.h \
   /home/mattia-arch/Documents/archGL_engine/include/types.h \
-  /home/mattia-arch/Documents/archGL_engine/include/window.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -797,15 +787,12 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
-  /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/string_view.tcc \
@@ -813,7 +800,6 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
-  /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/clocale \
@@ -846,7 +832,6 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
-  /usr/include/c++/13.2.1/vector \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -1179,7 +1164,11 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/uses_allocator.h:
 
-/usr/include/c++/13.2.1/bits/stringfwd.h:
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/home/mattia-arch/Documents/archGL_engine/src/engine/engine.cpp:
 
 /usr/include/bits/types/struct_FILE.h:
 
@@ -1227,7 +1216,7 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/refwrap.h:
 
-/usr/include/bits/stdint-intn.h:
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13.2.1/typeinfo:
 
@@ -1235,11 +1224,7 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/bits/types/error_t.h:
 
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/asm-generic/errno-base.h:
+/usr/include/bits/stdint-intn.h:
 
 /usr/include/c++/13.2.1/clocale:
 
@@ -1249,7 +1234,19 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /home/mattia-arch/Documents/archGL_engine/include/window.h:
 
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
 /usr/include/asm-generic/errno.h:
+
+/home/mattia-arch/Documents/archGL_engine/include/geometry.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
 
 /usr/include/c++/13.2.1/bits/istream.tcc:
 
@@ -1269,6 +1266,22 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/functexcept.h:
 
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/time.h:
+
+/home/mattia-arch/Documents/archGL_engine/src/windowing/window.cpp:
+
+/home/mattia-arch/Documents/archGL_engine/include/main.h:
+
+/usr/include/c++/13.2.1/bits/cpp_type_traits.h:
+
+/usr/include/c++/13.2.1/bits/alloc_traits.h:
+
+/usr/include/c++/13.2.1/bits/basic_string.h:
+
 /home/mattia-arch/Documents/archGL_engine/include/glad/glad.h:
 
 /usr/include/bits/atomic_wide_counter.h:
@@ -1287,25 +1300,9 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/stl_bvector.h:
 
-/usr/include/bits/wordsize.h:
-
 /home/mattia-arch/Documents/archGL_engine/include/types.h:
 
 /usr/include/bits/locale.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/home/mattia-arch/Documents/archGL_engine/src/engine/engine.cpp:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/c++/13.2.1/bits/basic_string.h:
 
 /usr/include/c++/13.2.1/ext/alloc_traits.h:
 
@@ -1341,14 +1338,6 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/bits/pthreadtypes.h:
 
-/home/mattia-arch/Documents/archGL_engine/src/windowing/window.cpp:
-
-/usr/include/c++/13.2.1/bits/cpp_type_traits.h:
-
-/usr/include/c++/13.2.1/bits/alloc_traits.h:
-
-/home/mattia-arch/Documents/archGL_engine/include/main.h:
-
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/types/__fpos64_t.h:
@@ -1364,14 +1353,6 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13.2.1/bits/range_access.h:
-
-/home/mattia-arch/Documents/archGL_engine/include/geometry.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/ctype.h:
-
-/usr/include/bits/waitflags.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -1390,6 +1371,8 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 /usr/include/sys/types.h:
 
 /usr/include/bits/wctype-wchar.h:
+
+/usr/include/bits/wordsize.h:
 
 /usr/include/c++/13.2.1/bit:
 
@@ -1504,3 +1487,5 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+
+/usr/include/c++/13.2.1/bits/stringfwd.h:

@@ -11,6 +11,9 @@ int main()
 
     mWindow::windowInitClass windowInit = mWindow::windowInitClass(800, 500, (const char *)"ArchGL");
 
+    printf("OpenGL version: %s\n", glGetString(GL_VERSION));
+    printf("OpenGL renderer: %s\n", glGetString(GL_RENDERER));
+
     /* mShader::mLinkShader::linkingShaderClass link_shader = mShader::mLinkShader::linkingShaderClass();
     unsigned int shader_program = link_shader.returnShaderProgram(); */
 
@@ -48,9 +51,6 @@ int main()
     mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(vaos, windowInit);
 
     engine.drawElements();
-
-    /* printf("OpenGL version: %s\n", glGetString(GL_VERSION));
-    printf("OpenGL renderer: %s\n", glGetString(GL_RENDERER)); */
 
     /* while (!glfwWindowShouldClose(win))
     {
