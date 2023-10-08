@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "main.h"
+#include "types.h"
 
 namespace mWindow
 {
@@ -21,9 +21,11 @@ namespace mWindow
 
         GLFWwindow *getWindow();
 
-        static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
+        void processInput();
 
-        static void processInput(GLFWwindow *window);
+        void processInput(GLFWwindow *window);
+
+        static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
         
     };
 

@@ -11,13 +11,8 @@ int main()
 
     mWindow::windowInitClass windowInit = mWindow::windowInitClass(800, 500, (const char *)"ArchGL");
 
-    GLFWwindow *win = windowInit.getWindow();
-
-    printf("OpenGL version: %s\n", glGetString(GL_VERSION));
-    printf("OpenGL renderer: %s\n", glGetString(GL_RENDERER));
-
-    mShader::mLinkShader::linkingShaderClass link_shader = mShader::mLinkShader::linkingShaderClass();
-    unsigned int shader_program = link_shader.returnShaderProgram();
+    /* mShader::mLinkShader::linkingShaderClass link_shader = mShader::mLinkShader::linkingShaderClass();
+    unsigned int shader_program = link_shader.returnShaderProgram(); */
 
     std::vector<float> vertices1 = {
          0.5f,  0.5f, 0.0f,  // top right
@@ -48,12 +43,21 @@ int main()
     unsigned int VAO1 = triangleObj1.returnVao();
     unsigned int VAO2 = triangleObj2.returnVao();
 
-    while (!glfwWindowShouldClose(win))
+    std::vector<unsigned int> vaos = {VAO1, VAO2};
+
+    mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(vaos, windowInit);
+
+    engine.drawElements();
+
+    /* printf("OpenGL version: %s\n", glGetString(GL_VERSION));
+    printf("OpenGL renderer: %s\n", glGetString(GL_RENDERER)); */
+
+    /* while (!glfwWindowShouldClose(win))
     {
-        /* input */
+        // input
         windowInit.processInput(win);
 
-        /* render */
+        // render
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -77,8 +81,10 @@ int main()
 
     triangleObj1.deleteBuffer();
     //triangleObj2.deleteBuffer();
-    link_shader.deleteShaderProgram();
+    link_shader.deleteShaderProgram(); 
+    
+    */
 
-    glfwTerminate();
+    //glfwTerminate();
     return 0;
 }

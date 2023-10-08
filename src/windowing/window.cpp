@@ -46,6 +46,12 @@ namespace mWindow
         glViewport(0, 0, width, height);
     }
 
+    void windowInitClass::processInput()
+    {
+        if (glfwGetKey(window, GLFW_KEY_BACKSPACE) == GLFW_PRESS)
+            glfwSetWindowShouldClose(window, true);
+    }
+
     void windowInitClass::processInput(GLFWwindow *window)
     {
         if (glfwGetKey(window, GLFW_KEY_BACKSPACE) == GLFW_PRESS)
