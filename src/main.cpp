@@ -9,13 +9,10 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-    mWindow::windowInitClass windowInit = mWindow::windowInitClass(800, 500, (const char *)"ArchGL");
+    mWindow::windowInitClass windowInit = mWindow::windowInitClass(WINDOW_WIDTH, WINDOW_HEIGHT, (const char *)WINDOW_NAME);
 
-    printf("OpenGL version: %s\n", glGetString(GL_VERSION));
-    printf("OpenGL renderer: %s\n", glGetString(GL_RENDERER));
-
-    /* mShader::mLinkShader::linkingShaderClass link_shader = mShader::mLinkShader::linkingShaderClass();
-    unsigned int shader_program = link_shader.returnShaderProgram(); */
+    OPENGL_LOGI((const char*) glGetString(GL_VERSION));
+    OPENGL_LOGI((const char*) glGetString(GL_RENDERER));
 
     std::vector<float> vertices1 = {
          0.5f,  0.5f, 0.0f,  // top right
@@ -52,39 +49,10 @@ int main()
 
     engine.drawElements();
 
-    /* while (!glfwWindowShouldClose(win))
-    {
-        // input
-        windowInit.processInput(win);
-
-        // render
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-        glUseProgram(shader_program);
-
-        // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-        glBindVertexArray(VAO1); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
-        
-        glBindVertexArray(VAO2);
-        // glDrawArrays(GL_TRIANGLES, 0, 6);
-        glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
-
-        // glBindVertexArray(0); // no need to unbind it every time 
-
-        glfwSwapBuffers(win);
-        glfwPollEvents();
-    }
 
     triangleObj1.deleteBuffer();
-    //triangleObj2.deleteBuffer();
-    link_shader.deleteShaderProgram(); 
+    triangleObj2.deleteBuffer();
     
-    */
-
-    //glfwTerminate();
+    glfwTerminate();
     return 0;
 }

@@ -19,6 +19,7 @@ namespace mEngineBlock
             /* code */
             glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
+            glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
             glUseProgram(shader_program);
 
@@ -26,10 +27,13 @@ namespace mEngineBlock
             {
                 glBindVertexArray(vao_elem); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
                 glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
+                glBindVertexArray(0);
             }
 
             glfwSwapBuffers(window_wrapper.getWindow());
             glfwPollEvents();
         }
+
+        link_shader_program->deleteShaderProgram();
     }
 }

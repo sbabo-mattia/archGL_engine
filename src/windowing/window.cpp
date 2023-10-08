@@ -2,12 +2,12 @@
 
 namespace mWindow
 {
-    
+
     windowInitClass::windowInitClass(int width = 800, int height = 600, const char *window_name = "OpenGL Window") : width(width), height(height), window_name(window_name)
     {
 
         if (createWindow() == OPENGL_OK)
-            std::cout << "GLFW window created correctly\n";
+            OPENGL_LOGI("GLFW window created correctly");
     }
 
     int windowInitClass::createWindow()
@@ -27,7 +27,7 @@ namespace mWindow
 
         if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
         {
-            std::cout << "Failed to initialize GLAD" << std::endl;
+            OPENGL_LOGE("Failed to initialize GLAD");
             return OPENGL_ERROR;
         }
 
@@ -36,7 +36,7 @@ namespace mWindow
         return OPENGL_OK;
     }
 
-    GLFWwindow * windowInitClass::getWindow()
+    GLFWwindow *windowInitClass::getWindow()
     {
         return window;
     }
@@ -58,5 +58,4 @@ namespace mWindow
             glfwSetWindowShouldClose(window, true);
     }
 
-    
 }

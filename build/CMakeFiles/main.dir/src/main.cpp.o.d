@@ -139,6 +139,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/bits/istream.tcc \
+ /usr/include/c++/13.2.1/stdlib.h \
  /home/mattia-arch/Documents/archGL_engine/src/../include/glad/glad.h \
  /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h \
