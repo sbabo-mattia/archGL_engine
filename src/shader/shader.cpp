@@ -120,6 +120,8 @@ namespace mShader
             }
             glDeleteShader(vertex_shader);
             glDeleteShader(fragment_shader);
+
+            OPENGL_LOGI("Created linking shader program");
         }
 
         unsigned int linkingShaderClass::returnShaderProgram()

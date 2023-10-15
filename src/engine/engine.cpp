@@ -25,7 +25,8 @@ namespace mEngineBlock
 
             for (auto &vao_elem : obj_VAO)
             {
-                glBindVertexArray(vao_elem); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
+                glBindVertexArray(vao_elem); 
+                // glDrawArrays(GL_TRIANGLES, 0 , 3); // if EBO is not used
                 glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
                 glBindVertexArray(0);
             }

@@ -5,19 +5,31 @@
 
 namespace mGeometryObject
 {
-    class geometryObjectClass{
+    class geometryObjectClass
+    {
 
-        private:
-            std::vector<float> vertices;
-            std::vector<unsigned int> indices;
-            unsigned int VAO, VBO, EBO;
+    private:
+        std::vector<float> vertices;
+        std::vector<unsigned int> indices;
 
-        public:
-            geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices);
+        unsigned int VAO, VBO, EBO;
 
-            unsigned int returnVao();
+    public:
+        geometryObjectClass(std::vector<float> vec_vertices);
+        geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices);
 
-            void deleteBuffer();
-            
+        void initVerticesStruct(bool is_indexed);
+        unsigned int returnVao();
+
+        void deleteBuffer();
     };
+
+    class geometryObjectColoredClass : public geometryObjectClass
+    {
+    private:
+    public:
+        geometryObjectColoredClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices);
+        ~geometryObjectColoredClass();
+    };
+
 }

@@ -41,15 +41,35 @@ int main()
         0, 1, 3, // first Triangle
     };
 
+    std::vector<float> vertices_tr = {
+    // positions      
+     0.5f, -0.5f, 0.0f,
+    -0.5f, -0.5f, 0.0f,
+     0.0f,  0.5f, 0.0f
+     }; 
+
+    std::vector<float> vertices_tr_cl = {
+    // positions         // colors
+         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // bottom left
+         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top 
+    };   
+
     mGeometryObject::geometryObjectClass triangleObj1 = mGeometryObject::geometryObjectClass(vertices1, indices1);
     mGeometryObject::geometryObjectClass triangleObj2 = mGeometryObject::geometryObjectClass(vertices2, indices2);
+
+    mGeometryObject::geometryObjectClass triangleObj3 = mGeometryObject::geometryObjectClass(vertices_tr, indices2);
+    mGeometryObject::geometryObjectClass triangleObj4 = mGeometryObject::geometryObjectClass(vertices_tr_cl, indices2);
 
     unsigned int VAO1 = triangleObj1.returnVao();
     unsigned int VAO2 = triangleObj2.returnVao();
 
-    std::vector<unsigned int> vaos = {VAO1, VAO2};
+    unsigned int VAO_tr = triangleObj3.returnVao();
+    unsigned int VAO_tr_cl = triangleObj4.returnVao();
 
-    mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(vaos, windowInit);
+    std::vector<unsigned int> VAOs = {VAO_tr_cl};
+
+    mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(VAOs, windowInit);
 
     engine.drawElements();
 
