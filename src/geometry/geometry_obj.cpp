@@ -3,38 +3,44 @@
 namespace mGeometryObject
 {
 
-    geometryObjectClass::geometryObjectClass(std::vector<float> vec_vertices) : vertices(vec_vertices)
+    void geometryObjectClass::vertexPositionAttribute(int size)
+    {
+        // position attribute
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, size * sizeof(float), (void *)0);
+        glEnableVertexAttribArray(0);
+    }
+
+    void geometryObjectClass::vertexColorAttribute(int size)
+    {
+        
+        // color attribute
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, size * sizeof(float), (void *)(3 * sizeof(float)));
+        glEnableVertexAttribArray(1);
+    }
+
+    void geometryObjectClass::vertexTextureAttribute(int size)
+    {
+        glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, size * sizeof(float), (void *)(6 * sizeof(float)));
+        glEnableVertexAttribArray(2);
+    }
+
+    geometryObjectClass::geometryObjectClass(std::vector<float> vec_vertices, const int&& vertex_size) : vertices(vec_vertices)
     {
 
         initVerticesStruct(false);
 
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
-        glEnableVertexAttribArray(0);
-
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-        glBindVertexArray(0);
+        vertexPositionAttribute(vertex_size);
 
         OPENGL_LOGI("Created geometry object");
     };
 
-    geometryObjectClass::geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices) : vertices(vec_vertices), indices(indices)
+    geometryObjectClass::geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices, const int&& vertex_size) : vertices(vec_vertices), indices(indices)
     {
 
         initVerticesStruct(true);
 
-        /* glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
-        glEnableVertexAttribArray(0); */
-        // position attribute
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
-        glEnableVertexAttribArray(0);
-        // color attribute
-        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float)));
-        glEnableVertexAttribArray(1);
-
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-        glBindVertexArray(0);
+        vertexPositionAttribute(vertex_size);
+        vertexColorAttribute(vertex_size);
 
         OPENGL_LOGI("Created geometry object");
     };
@@ -68,22 +74,5 @@ namespace mGeometryObject
         glDeleteBuffers(1, &EBO);
         glDeleteBuffers(1, &VBO);
     }
-
-    geometryObjectColoredClass::geometryObjectColoredClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices) : geometryObjectClass(vec_vertices, indices)
-    {
-
-        // position attribute
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
-        glEnableVertexAttribArray(0);
-        // color attribute
-        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float)));
-        glEnableVertexAttribArray(1);
-
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-        glBindVertexArray(0);
-
-        OPENGL_LOGI("Created geometry object");
-    };
 
 }

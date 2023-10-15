@@ -55,11 +55,12 @@ int main()
          0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top 
     };   
 
-    mGeometryObject::geometryObjectClass triangleObj1 = mGeometryObject::geometryObjectClass(vertices1, indices1);
-    mGeometryObject::geometryObjectClass triangleObj2 = mGeometryObject::geometryObjectClass(vertices2, indices2);
 
-    mGeometryObject::geometryObjectClass triangleObj3 = mGeometryObject::geometryObjectClass(vertices_tr, indices2);
-    mGeometryObject::geometryObjectClass triangleObj4 = mGeometryObject::geometryObjectClass(vertices_tr_cl, indices2);
+    mGeometryObject::geometryObjectClass triangleObj1 = mGeometryObject::geometryObjectClass(vertices1, indices1, 3);
+    mGeometryObject::geometryObjectClass triangleObj2 = mGeometryObject::geometryObjectClass(vertices2, indices2, 3);
+
+    mGeometryObject::geometryObjectClass triangleObj3 = mGeometryObject::geometryObjectClass(vertices_tr, indices2, 6);
+    mGeometryObject::geometryObjectClass triangleObj4 = mGeometryObject::geometryObjectClass(vertices_tr_cl, indices2, 6);
 
     unsigned int VAO1 = triangleObj1.returnVao();
     unsigned int VAO2 = triangleObj2.returnVao();

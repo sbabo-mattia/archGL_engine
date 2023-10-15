@@ -5,6 +5,7 @@
 
 namespace mGeometryObject
 {
+
     class geometryObjectClass
     {
 
@@ -15,21 +16,20 @@ namespace mGeometryObject
         unsigned int VAO, VBO, EBO;
 
     public:
-        geometryObjectClass(std::vector<float> vec_vertices);
-        geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices);
+        typedef void (geometryObjectClass::*funcAttribute)();
+
+        geometryObjectClass(std::vector<float> vec_vertices, const int&& vertex_size);
+        geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices, const int&& vertex_size);
 
         void initVerticesStruct(bool is_indexed);
+
+        void vertexPositionAttribute(int size);
+        void vertexColorAttribute(int size);
+        void vertexTextureAttribute(int size);
+
         unsigned int returnVao();
 
         void deleteBuffer();
-    };
-
-    class geometryObjectColoredClass : public geometryObjectClass
-    {
-    private:
-    public:
-        geometryObjectColoredClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices);
-        ~geometryObjectColoredClass();
     };
 
 }
