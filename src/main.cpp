@@ -11,25 +11,29 @@ int main()
 
     mWindow::windowInitClass windowInit = mWindow::windowInitClass(WINDOW_WIDTH, WINDOW_HEIGHT, (const char *)WINDOW_NAME);
 
-    OPENGL_LOGI((const char*) glGetString(GL_VERSION));
-    OPENGL_LOGI((const char*) glGetString(GL_RENDERER));
+    OPENGL_LOGI((const char *)glGetString(GL_VERSION));
+    OPENGL_LOGI((const char *)glGetString(GL_RENDERER));
+
+    int nrAttributes;
+    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
 
     std::vector<float> vertices1 = {
-         0.5f,  0.5f, 0.0f,  // top right
-         0.8f, -0.8f, 0.0f,  // bottom right
-        -0.5f, -0.5f, 0.0f,  // bottom left
-        -0.5f,  0.5f, 0.0f   // top left 
+        0.5f, 0.5f, 0.0f,   // top right
+        0.8f, -0.8f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f, // bottom left
+        -0.5f, 0.5f, 0.0f   // top left
     };
 
     std::vector<unsigned int> indices1 = {
-        1, 2, 3  // second Triangle
+        1, 2, 3 // second Triangle
     };
 
     std::vector<float> vertices2 = {
-         0.5f,  0.5f, 0.0f,  // top right
-         0.6f, -0.5f, 0.0f,  // bottom right
-        -0.3f, -0.3f, 0.0f,  // bottom left
-        -0.5f,  0.5f, 0.0f   // top left 
+        0.5f, 0.5f, 0.0f,   // top right
+        0.6f, -0.5f, 0.0f,  // bottom right
+        -0.3f, -0.3f, 0.0f, // bottom left
+        -0.5f, 0.5f, 0.0f   // top left
 
     };
 
@@ -49,10 +53,9 @@ int main()
 
     engine.drawElements();
 
-
     triangleObj1.deleteBuffer();
     triangleObj2.deleteBuffer();
-    
+
     glfwTerminate();
     return 0;
 }

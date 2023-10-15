@@ -4,8 +4,32 @@ namespace mShader
 {
     namespace mVertexShader
     {
-        vertexShaderClass::vertexShaderClass(unsigned int &vertex_shader)
+        vertexShaderClass::vertexShaderClass(unsigned int &vertex_shader, const char* vertex_shader_path)
         {
+
+            std::string shader_code;
+            std::ifstream shader_file;
+
+            shader_file.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+
+            try
+            {
+                shader_file.open(vertex_shader_path);
+                std::stringstream vshader_stream;
+
+                vshader_stream << shader_file.rdbuf();
+
+                shader_file.close();
+
+                shader_code = vshader_stream.str();
+                vertexShaderSource = shader_code.c_str();
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+                OPENGL_LOGE("ERROR OPENING VERTEX SHADER FILE");
+            }
+            
             vertex_shader = glCreateShader(GL_VERTEX_SHADER);
             glShaderSource(vertex_shader, 1, &vertexShaderSource, NULL);
             glCompileShader(vertex_shader);
@@ -25,8 +49,32 @@ namespace mShader
 
     namespace mFragmentShader
     {
-        fragmentShaderClass::fragmentShaderClass(unsigned int &fragment_shader)
+        fragmentShaderClass::fragmentShaderClass(unsigned int &fragment_shader, const char* fragment_shader_path)
         {
+
+            std::string shader_code;
+            std::ifstream shader_file;
+
+            shader_file.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+
+            try
+            {
+                shader_file.open(fragment_shader_path);
+                std::stringstream vshader_stream;
+
+                vshader_stream << shader_file.rdbuf();
+
+                shader_file.close();
+
+                shader_code = vshader_stream.str();
+                fragmentShaderSource = shader_code.c_str();
+            }
+            catch(const std::exception& e)
+            {
+                std::cerr << e.what() << '\n';
+                OPENGL_LOGE("ERROR OPENING FRAGMENT SHADER FILE");
+            }
+
             fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
             glShaderSource(fragment_shader, 1, &fragmentShaderSource, NULL);
             glCompileShader(fragment_shader);
@@ -52,8 +100,8 @@ namespace mShader
             unsigned int vertex_shader = 0;
             unsigned int fragment_shader = 0;
 
-            mVertexShader::vertexShaderClass vertex_sh = mVertexShader::vertexShaderClass(vertex_shader);
-            mFragmentShader::fragmentShaderClass fragment_sh = mFragmentShader::fragmentShaderClass(fragment_shader);
+            mVertexShader::vertexShaderClass vertex_sh = mVertexShader::vertexShaderClass(vertex_shader, "../shader/shader.vs");
+            mFragmentShader::fragmentShaderClass fragment_sh = mFragmentShader::fragmentShaderClass(fragment_shader, "../shader/shader.fs");
 
             int success;
             char infoLog[512];

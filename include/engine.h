@@ -12,8 +12,6 @@ namespace mEngineBlock
     class engineBlockClass
     {
     private:
-        GLFWwindow *win;
-        bool draw_poly_lines = false;
         std::vector<unsigned int> obj_VAO;
         mShader::mLinkShader::linkingShaderClass* link_shader_program;
         mWindow::windowInitClass window_wrapper;

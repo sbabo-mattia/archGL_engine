@@ -2,6 +2,10 @@
 
 #include "types.h"
 
+#include <string>
+#include <fstream>
+#include <sstream>
+
 namespace mShader
 {
     namespace mVertexShader
@@ -10,15 +14,10 @@ namespace mShader
         class vertexShaderClass
         {
         private:
-            const char *vertexShaderSource = "#version 460 core\n"
-                                             "layout (location = 0) in vec3 aPos;\n"
-                                             "void main()\n"
-                                             "{\n"
-                                             "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-                                             "}\0";
+            const char *vertexShaderSource;
 
         public:
-            vertexShaderClass(unsigned int &vertex_shader);
+            vertexShaderClass(unsigned int &vertex_shader, const char* vertex_shader_path);
         };
     }
 
@@ -28,15 +27,10 @@ namespace mShader
         class fragmentShaderClass
         {
         private:
-            const char *fragmentShaderSource = "#version 460 core\n"
-                                               "out vec4 FragColor;\n"
-                                               "void main()\n"
-                                               "{\n"
-                                               "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-                                               "}\n\0";
+            const char *fragmentShaderSource;
 
         public:
-            fragmentShaderClass(unsigned int &fragment_shader);
+            fragmentShaderClass(unsigned int &fragment_shader, const char* fragment_shader_path);
         };
     }
 

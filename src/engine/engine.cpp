@@ -19,7 +19,7 @@ namespace mEngineBlock
             /* code */
             glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
-            glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+            // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
             glUseProgram(shader_program);
 

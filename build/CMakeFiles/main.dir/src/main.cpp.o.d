@@ -152,4 +152,9 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /home/mattia-arch/Documents/archGL_engine/src/../include/geometry.h \
  /home/mattia-arch/Documents/archGL_engine/src/../include/engine.h \
  /home/mattia-arch/Documents/archGL_engine/src/../include/window.h \
- /home/mattia-arch/Documents/archGL_engine/src/../include/shader.h
+ /home/mattia-arch/Documents/archGL_engine/src/../include/shader.h \
+ /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/bits/codecvt.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/13.2.1/bits/fstream.tcc /usr/include/c++/13.2.1/sstream \
+ /usr/include/c++/13.2.1/bits/sstream.tcc

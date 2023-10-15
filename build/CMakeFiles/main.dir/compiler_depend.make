@@ -82,6 +82,7 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/basic_string.tcc \
   /usr/include/c++/13.2.1/bits/char_traits.h \
   /usr/include/c++/13.2.1/bits/charconv.h \
+  /usr/include/c++/13.2.1/bits/codecvt.h \
   /usr/include/c++/13.2.1/bits/concept_check.h \
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
@@ -89,6 +90,7 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/exception.h \
   /usr/include/c++/13.2.1/bits/exception_defines.h \
   /usr/include/c++/13.2.1/bits/exception_ptr.h \
+  /usr/include/c++/13.2.1/bits/fstream.tcc \
   /usr/include/c++/13.2.1/bits/functexcept.h \
   /usr/include/c++/13.2.1/bits/functional_hash.h \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
@@ -113,6 +115,7 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/range_access.h \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/sstream.tcc \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
@@ -148,6 +151,7 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/ext/numeric_traits.h \
   /usr/include/c++/13.2.1/ext/string_conversions.h \
   /usr/include/c++/13.2.1/ext/type_traits.h \
+  /usr/include/c++/13.2.1/fstream \
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
@@ -156,6 +160,7 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
+  /usr/include/c++/13.2.1/sstream \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -167,8 +172,10 @@ CMakeFiles/main.dir/src/engine/engine.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/vector \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -556,6 +563,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/include/c++/13.2.1/bits/basic_string.tcc \
   /usr/include/c++/13.2.1/bits/char_traits.h \
   /usr/include/c++/13.2.1/bits/charconv.h \
+  /usr/include/c++/13.2.1/bits/codecvt.h \
   /usr/include/c++/13.2.1/bits/concept_check.h \
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
@@ -563,6 +571,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/include/c++/13.2.1/bits/exception.h \
   /usr/include/c++/13.2.1/bits/exception_defines.h \
   /usr/include/c++/13.2.1/bits/exception_ptr.h \
+  /usr/include/c++/13.2.1/bits/fstream.tcc \
   /usr/include/c++/13.2.1/bits/functexcept.h \
   /usr/include/c++/13.2.1/bits/functional_hash.h \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
@@ -587,6 +596,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/include/c++/13.2.1/bits/range_access.h \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/sstream.tcc \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
@@ -622,6 +632,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/include/c++/13.2.1/ext/numeric_traits.h \
   /usr/include/c++/13.2.1/ext/string_conversions.h \
   /usr/include/c++/13.2.1/ext/type_traits.h \
+  /usr/include/c++/13.2.1/fstream \
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
@@ -630,6 +641,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
+  /usr/include/c++/13.2.1/sstream \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -641,8 +653,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/mattia-arch/Documents/archGL_engine/sr
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/vector \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -757,6 +771,7 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/basic_string.tcc \
   /usr/include/c++/13.2.1/bits/char_traits.h \
   /usr/include/c++/13.2.1/bits/charconv.h \
+  /usr/include/c++/13.2.1/bits/codecvt.h \
   /usr/include/c++/13.2.1/bits/concept_check.h \
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
@@ -764,6 +779,7 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/exception.h \
   /usr/include/c++/13.2.1/bits/exception_defines.h \
   /usr/include/c++/13.2.1/bits/exception_ptr.h \
+  /usr/include/c++/13.2.1/bits/fstream.tcc \
   /usr/include/c++/13.2.1/bits/functexcept.h \
   /usr/include/c++/13.2.1/bits/functional_hash.h \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
@@ -788,6 +804,7 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/bits/range_access.h \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/sstream.tcc \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
@@ -819,6 +836,7 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/ext/numeric_traits.h \
   /usr/include/c++/13.2.1/ext/string_conversions.h \
   /usr/include/c++/13.2.1/ext/type_traits.h \
+  /usr/include/c++/13.2.1/fstream \
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
@@ -827,6 +845,7 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
+  /usr/include/c++/13.2.1/sstream \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/stdlib.h \
   /usr/include/c++/13.2.1/streambuf \
@@ -837,8 +856,10 @@ CMakeFiles/main.dir/src/shader/shader.cpp.o: /home/mattia-arch/Documents/archGL_
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -1125,15 +1146,21 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
+
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/13.2.1/vector:
 
 /usr/include/c++/13.2.1/streambuf:
 
 /usr/include/c++/13.2.1/stdexcept:
+
+/usr/include/c++/13.2.1/sstream:
 
 /usr/include/c++/13.2.1/pstl/pstl_config.h:
 
@@ -1161,17 +1188,15 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/cwchar:
 
-/usr/include/c++/13.2.1/iosfwd:
-
-/usr/include/c++/13.2.1/cstdlib:
-
 /usr/include/c++/13.2.1/cctype:
 
-/usr/include/c++/13.2.1/bits/uses_allocator.h:
+/usr/include/c++/13.2.1/bits/stringfwd.h:
 
 /usr/include/bits/types/struct_timespec.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/13.2.1/fstream:
 
 /home/mattia-arch/Documents/archGL_engine/src/engine/engine.cpp:
 
@@ -1363,6 +1388,12 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/bits/types/wint_t.h:
 
+/usr/include/c++/13.2.1/iosfwd:
+
+/usr/include/c++/13.2.1/cstdlib:
+
+/usr/include/c++/13.2.1/bits/codecvt.h:
+
 /usr/include/c++/13.2.1/bits/stl_pair.h:
 
 /usr/include/bits/dlfcn.h:
@@ -1419,6 +1450,12 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/exception_ptr.h:
 
+/usr/include/c++/13.2.1/bits/uses_allocator.h:
+
+/usr/include/c++/13.2.1/bits/fstream.tcc:
+
+/usr/include/c++/13.2.1/bits/invoke.h:
+
 /usr/include/c++/13.2.1/bits/functional_hash.h:
 
 /usr/include/c++/13.2.1/bits/ostream.tcc:
@@ -1432,8 +1469,6 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 /usr/include/linux/errno.h:
 
 /usr/include/c++/13.2.1/bits/hash_bytes.h:
-
-/usr/include/c++/13.2.1/bits/invoke.h:
 
 /home/mattia-arch/Documents/archGL_engine/src/main.cpp:
 
@@ -1457,13 +1492,15 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/nested_exception.h:
 
+/usr/include/c++/13.2.1/stdlib.h:
+
+/usr/include/c++/13.2.1/bits/requires_hosted.h:
+
 /usr/include/bits/wchar.h:
 
 /usr/include/c++/13.2.1/bits/predefined_ops.h:
 
-/usr/include/c++/13.2.1/stdlib.h:
-
-/usr/include/c++/13.2.1/bits/requires_hosted.h:
+/usr/include/c++/13.2.1/bits/sstream.tcc:
 
 /usr/include/c++/13.2.1/bits/vector.tcc:
 
@@ -1477,6 +1514,14 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 
 /usr/include/c++/13.2.1/bits/stl_construct.h:
 
+/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/13.2.1/bits/exception.h:
+
+/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/13.2.1/string_view:
 
 /usr/include/bits/types/clockid_t.h:
@@ -1486,13 +1531,3 @@ CMakeFiles/main.dir/src/windowing/window.cpp.o: /home/mattia-arch/Documents/arch
 /usr/include/c++/13.2.1/bits/postypes.h:
 
 /usr/include/c++/13.2.1/bits/streambuf.tcc:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/13.2.1/bits/exception.h:
-
-/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
-
-/usr/include/c++/13.2.1/bits/stringfwd.h:
