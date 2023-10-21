@@ -10,6 +10,7 @@ file(GLOB SOURCES "src/*.cpp",
                   "src/shader/*.cpp",
                   "src/engine/*.cpp",
                   "src/*.c")
+                  
 add_executable(main ${SOURCES})
 
 include_directories("include/*.h")

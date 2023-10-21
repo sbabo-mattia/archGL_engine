@@ -42,19 +42,29 @@ int main()
     };
 
     std::vector<float> vertices_tr = {
-    // positions      
-     0.5f, -0.5f, 0.0f,
-    -0.5f, -0.5f, 0.0f,
-     0.0f,  0.5f, 0.0f
-     }; 
+        // positions
+        0.5f, -0.5f, 0.0f,
+        -0.5f, -0.5f, 0.0f,
+        0.0f, 0.5f, 0.0f};
 
     std::vector<float> vertices_tr_cl = {
-    // positions         // colors
-         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // bottom right
-        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // bottom left
-         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top 
-    };   
+        // positions         // colors
+        0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, // bottom left
+        0.0f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f    // top
+    };
 
+    std::vector<float> vertices_rect = {
+        // positions          // colors           // texture coords
+        0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,   // top right
+        0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, // bottom left
+        -0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f   // top left
+    };
+    std::vector<unsigned int> indices = {
+        0, 1, 3, // first triangle
+        1, 2, 3  // second triangle
+    };
 
     mGeometryObject::geometryObjectClass triangleObj1 = mGeometryObject::geometryObjectClass(vertices1, indices1, 3);
     mGeometryObject::geometryObjectClass triangleObj2 = mGeometryObject::geometryObjectClass(vertices2, indices2, 3);
@@ -62,7 +72,9 @@ int main()
     mGeometryObject::geometryObjectClass triangleObj3 = mGeometryObject::geometryObjectClass(vertices_tr, indices2, 6);
     mGeometryObject::geometryObjectClass triangleObj4 = mGeometryObject::geometryObjectClass(vertices_tr_cl, indices2, 6);
 
-    std::vector<mGeometryObject::geometryObjectClass* > GEOs = {&triangleObj4};
+    mGeometryObject::geometryObjectClass rectText = mGeometryObject::geometryObjectClass(vertices_rect, indices, "../assets/textures/wall.jpg", 8);
+
+    std::vector<mGeometryObject::geometryObjectClass *> GEOs = {&rectText};
 
     mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(GEOs, windowInit);
 

@@ -26,8 +26,13 @@ namespace mEngineBlock
             for (auto &elem : obj_GEO)
             {
                 glBindVertexArray(elem->returnVao()); 
+
+                if (elem->returnTex())
+                {
+                    glBindTexture(GL_TEXTURE_2D, elem->returnTex());
+                }
                 // glDrawArrays(GL_TRIANGLES, 0 , 3); // if EBO is not used
-                glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
+                glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(elem->indices_size()), GL_UNSIGNED_INT, 0);
                 glBindVertexArray(0);
             }
 
