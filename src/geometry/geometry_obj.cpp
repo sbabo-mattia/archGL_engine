@@ -31,7 +31,7 @@ namespace mGeometryObject
 
         vertexPositionAttribute(vertex_size);
 
-        OPENGL_LOGI("Created geometry object");
+        OPENGL_LOGD("Created geometry object");
     };
 
     geometryObjectClass::geometryObjectClass(std::vector<float> vec_vertices, std::vector<unsigned int> indices, const int&& vertex_size) : vertices(vec_vertices), indices(indices)
@@ -42,7 +42,7 @@ namespace mGeometryObject
         vertexPositionAttribute(vertex_size);
         vertexColorAttribute(vertex_size);
 
-        OPENGL_LOGI("Created geometry object");
+        OPENGL_LOGD("Created geometry object");
     };
 
     void geometryObjectClass::initVerticesStruct(bool is_indexed = false)

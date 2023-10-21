@@ -7,7 +7,7 @@ namespace mWindow
     {
 
         if (createWindow() == OPENGL_OK)
-            OPENGL_LOGI("GLFW window created correctly");
+            OPENGL_LOGD("GLFW window created correctly");
     }
 
     int windowInitClass::createWindow()
