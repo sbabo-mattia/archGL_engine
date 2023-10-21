@@ -4,6 +4,7 @@
 
 #include "window.h"
 #include "shader.h"
+#include "geometry.h"
 #include <vector>
 
 namespace mEngineBlock
@@ -12,7 +13,7 @@ namespace mEngineBlock
     class engineBlockClass
     {
     private:
-        std::vector<unsigned int> obj_VAO;
+        std::vector<mGeometryObject::geometryObjectClass*> obj_GEO;
         mShader::mLinkShader::linkingShaderClass* link_shader_program;
         mWindow::windowInitClass window_wrapper;
 
@@ -23,7 +24,7 @@ namespace mEngineBlock
          * @param win
          * @param elements_array
          */
-        engineBlockClass(std::vector<unsigned int>& elements_array, mWindow::windowInitClass& window);
+        engineBlockClass(std::vector<mGeometryObject::geometryObjectClass*>& geometry_array, mWindow::windowInitClass& window);
 
         void drawElements();
     };

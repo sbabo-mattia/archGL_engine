@@ -14,6 +14,7 @@
 #define WINDOW_WIDTH 950
 #define WINDOW_HEIGHT 450
 
+
 inline void OPENGL_LOGI()
 {
     std::cout << "\033[32m" << ' ' << "\033[0m"<< std::endl;

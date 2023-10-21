@@ -2,7 +2,7 @@
 
 namespace mEngineBlock
 {
-    engineBlockClass::engineBlockClass(std::vector<unsigned int> &elements_array, mWindow::windowInitClass &window) : obj_VAO(elements_array), window_wrapper(window)
+    engineBlockClass::engineBlockClass(std::vector<mGeometryObject::geometryObjectClass*> &geometry_array, mWindow::windowInitClass &window) : obj_GEO(geometry_array), window_wrapper(window)
     {
         link_shader_program = new mShader::mLinkShader::linkingShaderClass();
     }
@@ -23,9 +23,9 @@ namespace mEngineBlock
 
             glUseProgram(shader_program);
 
-            for (auto &vao_elem : obj_VAO)
+            for (auto &elem : obj_GEO)
             {
-                glBindVertexArray(vao_elem); 
+                glBindVertexArray(elem->returnVao()); 
                 // glDrawArrays(GL_TRIANGLES, 0 , 3); // if EBO is not used
                 glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
                 glBindVertexArray(0);

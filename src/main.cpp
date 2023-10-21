@@ -62,15 +62,9 @@ int main()
     mGeometryObject::geometryObjectClass triangleObj3 = mGeometryObject::geometryObjectClass(vertices_tr, indices2, 6);
     mGeometryObject::geometryObjectClass triangleObj4 = mGeometryObject::geometryObjectClass(vertices_tr_cl, indices2, 6);
 
-    unsigned int VAO1 = triangleObj1.returnVao();
-    unsigned int VAO2 = triangleObj2.returnVao();
+    std::vector<mGeometryObject::geometryObjectClass* > GEOs = {&triangleObj4};
 
-    unsigned int VAO_tr = triangleObj3.returnVao();
-    unsigned int VAO_tr_cl = triangleObj4.returnVao();
-
-    std::vector<unsigned int> VAOs = {VAO_tr_cl};
-
-    mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(VAOs, windowInit);
+    mEngineBlock::engineBlockClass engine = mEngineBlock::engineBlockClass(GEOs, windowInit);
 
     engine.drawElements();
 
