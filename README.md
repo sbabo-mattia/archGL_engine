@@ -23,7 +23,7 @@ OpenGL API version 4.6 and greater. Check by running mesa-utils verification too
 # Build
 
 In the build folder run:
-
+    mkdir build && cd build
     cmake ..
     make
     ./main
