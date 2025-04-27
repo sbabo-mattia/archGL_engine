@@ -17,7 +17,7 @@ include_directories("include/*.h")
 
 find_package(OpenGL REQUIRED)
 target_link_libraries(main OpenGL::OpenGL)
-target_link_libraries(main glfw3)
+target_link_libraries(main glfw)
 target_link_libraries(main GL)
 
 

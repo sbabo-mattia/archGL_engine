@@ -1,3 +1,0 @@
-/home/mattia-arch/Documents/archGL_engine/build/CMakeFiles/main.dir
-/home/mattia-arch/Documents/archGL_engine/build/CMakeFiles/edit_cache.dir
-/home/mattia-arch/Documents/archGL_engine/build/CMakeFiles/rebuild_cache.dir
